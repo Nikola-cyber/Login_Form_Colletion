@@ -1,0 +1,32 @@
+<!-- HTML (login.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Login Form</h2>
+    <form id="loginForm" onsubmit="return handleLogin()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="checkbox" id="savePassword">
+        <label for="savePassword">Remember Me</label>
+
+        <input type="submit" value="Login">
+    </form>
+    <p id="successMessage" style="display: none; color: green;">Login Successful!</p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
